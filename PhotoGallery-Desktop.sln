@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGallery-Desktop", "PhotoGallery-Desktop\PhotoGallery-Desktop.csproj", "{5CFEA5F1-C772-4E27-AD1E-89B4D3BA56B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{71AE5301-D450-4115-8741-707B25A7ADEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{0E900414-BDEF-47B3-B0F8-10B2172F2628}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5CFEA5F1-C772-4E27-AD1E-89B4D3BA56B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CFEA5F1-C772-4E27-AD1E-89B4D3BA56B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CFEA5F1-C772-4E27-AD1E-89B4D3BA56B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AE5301-D450-4115-8741-707B25A7ADEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AE5301-D450-4115-8741-707B25A7ADEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AE5301-D450-4115-8741-707B25A7ADEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AE5301-D450-4115-8741-707B25A7ADEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E900414-BDEF-47B3-B0F8-10B2172F2628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E900414-BDEF-47B3-B0F8-10B2172F2628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E900414-BDEF-47B3-B0F8-10B2172F2628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E900414-BDEF-47B3-B0F8-10B2172F2628}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
