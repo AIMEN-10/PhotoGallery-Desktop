@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BusinessLayer;
-using DataAccessLayer;
+
 
 
 namespace PhotoGallery_Desktop
 {
     public partial class Form1 : Form
     {
-        public Form1()
+		//Logic logic = new Logic();
+		public Form1()
         {
             InitializeComponent();
         }
@@ -44,5 +45,10 @@ namespace PhotoGallery_Desktop
         {
 
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
