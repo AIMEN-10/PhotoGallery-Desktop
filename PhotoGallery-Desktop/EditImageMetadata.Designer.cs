@@ -29,9 +29,8 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditImageMetadata));
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.picBxPerson = new System.Windows.Forms.PictureBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.btnAddName = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,68 +40,53 @@
 			this.comBxEvent = new System.Windows.Forms.ComboBox();
 			this.dtPickerEventDate = new System.Windows.Forms.DateTimePicker();
 			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
 			this.dtPickerCaptureDate = new System.Windows.Forms.DateTimePicker();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.button1 = new System.Windows.Forms.Button();
 			this.lblHeaderName = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
 			this.lblLocationName = new System.Windows.Forms.Label();
 			this.webViewMap = new Microsoft.Web.WebView2.WinForms.WebView2();
 			this.btnSave = new System.Windows.Forms.Button();
-			this.picBxInfo = new System.Windows.Forms.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(this.picBxPerson)).BeginInit();
+			this.picBxPerson = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.webViewMap)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.picBxInfo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBxPerson)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textBox1
 			// 
 			this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-			this.textBox1.Location = new System.Drawing.Point(32, 161);
+			this.textBox1.Location = new System.Drawing.Point(30, 160);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(161, 20);
 			this.textBox1.TabIndex = 0;
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(29, 66);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(56, 16);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Person";
-			// 
-			// picBxPerson
-			// 
-			this.picBxPerson.Location = new System.Drawing.Point(32, 90);
-			this.picBxPerson.Name = "picBxPerson";
-			this.picBxPerson.Size = new System.Drawing.Size(67, 58);
-			this.picBxPerson.TabIndex = 3;
-			this.picBxPerson.TabStop = false;
-			// 
 			// label2
 			// 
-			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(29, 278);
+			this.label2.Image = global::PhotoGallery_Desktop.Properties.Resources._event;
+			this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label2.Location = new System.Drawing.Point(27, 270);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(46, 16);
+			this.label2.Size = new System.Drawing.Size(80, 24);
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Event";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// btnAddName
 			// 
 			this.btnAddName.BackColor = System.Drawing.Color.SandyBrown;
 			this.btnAddName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAddName.ForeColor = System.Drawing.Color.Black;
-			this.btnAddName.Location = new System.Drawing.Point(199, 159);
+			this.btnAddName.Location = new System.Drawing.Point(197, 158);
 			this.btnAddName.Name = "btnAddName";
-			this.btnAddName.Size = new System.Drawing.Size(33, 23);
+			this.btnAddName.Size = new System.Drawing.Size(22, 22);
 			this.btnAddName.TabIndex = 6;
 			this.btnAddName.Text = "+";
 			this.btnAddName.UseVisualStyleBackColor = false;
@@ -114,7 +98,7 @@
 			this.groupBox1.Controls.Add(this.rdBtnMale);
 			this.groupBox1.Controls.Add(this.rdBtnFemale);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox1.Location = new System.Drawing.Point(32, 198);
+			this.groupBox1.Location = new System.Drawing.Point(30, 194);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(161, 62);
 			this.groupBox1.TabIndex = 7;
@@ -150,9 +134,9 @@
 			this.btnAddEvent.BackColor = System.Drawing.Color.SandyBrown;
 			this.btnAddEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAddEvent.ForeColor = System.Drawing.Color.Black;
-			this.btnAddEvent.Location = new System.Drawing.Point(199, 304);
+			this.btnAddEvent.Location = new System.Drawing.Point(197, 295);
 			this.btnAddEvent.Name = "btnAddEvent";
-			this.btnAddEvent.Size = new System.Drawing.Size(33, 23);
+			this.btnAddEvent.Size = new System.Drawing.Size(22, 22);
 			this.btnAddEvent.TabIndex = 8;
 			this.btnAddEvent.Text = "+";
 			this.btnAddEvent.UseVisualStyleBackColor = false;
@@ -163,7 +147,7 @@
 			this.comBxEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.comBxEvent.ForeColor = System.Drawing.Color.Teal;
 			this.comBxEvent.FormattingEnabled = true;
-			this.comBxEvent.Location = new System.Drawing.Point(32, 304);
+			this.comBxEvent.Location = new System.Drawing.Point(30, 297);
 			this.comBxEvent.Name = "comBxEvent";
 			this.comBxEvent.Size = new System.Drawing.Size(161, 21);
 			this.comBxEvent.TabIndex = 9;
@@ -171,34 +155,26 @@
 			// dtPickerEventDate
 			// 
 			this.dtPickerEventDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.dtPickerEventDate.Location = new System.Drawing.Point(32, 364);
+			this.dtPickerEventDate.Location = new System.Drawing.Point(30, 362);
 			this.dtPickerEventDate.Name = "dtPickerEventDate";
 			this.dtPickerEventDate.Size = new System.Drawing.Size(200, 20);
 			this.dtPickerEventDate.TabIndex = 10;
 			// 
 			// label4
 			// 
-			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(29, 335);
+			this.label4.Image = global::PhotoGallery_Desktop.Properties.Resources.date;
+			this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label4.Location = new System.Drawing.Point(27, 334);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(83, 16);
+			this.label4.Size = new System.Drawing.Size(115, 24);
 			this.label4.TabIndex = 11;
 			this.label4.Text = "Event Date";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(29, 400);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(98, 16);
-			this.label5.TabIndex = 13;
-			this.label5.Text = "Capture Date";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// dtPickerCaptureDate
 			// 
-			this.dtPickerCaptureDate.Location = new System.Drawing.Point(32, 429);
+			this.dtPickerCaptureDate.Location = new System.Drawing.Point(30, 428);
 			this.dtPickerCaptureDate.Name = "dtPickerCaptureDate";
 			this.dtPickerCaptureDate.Size = new System.Drawing.Size(200, 20);
 			this.dtPickerCaptureDate.TabIndex = 12;
@@ -210,13 +186,26 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
-			this.panel1.Controls.Add(this.picBxInfo);
+			this.panel1.Controls.Add(this.button1);
 			this.panel1.Controls.Add(this.lblHeaderName);
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(801, 51);
 			this.panel1.TabIndex = 14;
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.Transparent;
+			this.button1.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.info;
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.ForeColor = System.Drawing.Color.PaleVioletRed;
+			this.button1.Location = new System.Drawing.Point(755, 10);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(30, 30);
+			this.button1.TabIndex = 29;
+			this.button1.UseVisualStyleBackColor = false;
 			// 
 			// lblHeaderName
 			// 
@@ -229,16 +218,6 @@
 			this.lblHeaderName.Size = new System.Drawing.Size(131, 29);
 			this.lblHeaderName.TabIndex = 1;
 			this.lblHeaderName.Text = "Aafi Sardar";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(520, 65);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(114, 16);
-			this.label3.TabIndex = 16;
-			this.label3.Text = "Select Location";
 			// 
 			// lblLocationName
 			// 
@@ -255,9 +234,9 @@
 			this.webViewMap.AllowExternalDrop = true;
 			this.webViewMap.CreationProperties = null;
 			this.webViewMap.DefaultBackgroundColor = System.Drawing.Color.White;
-			this.webViewMap.Location = new System.Drawing.Point(396, 85);
+			this.webViewMap.Location = new System.Drawing.Point(341, 90);
 			this.webViewMap.Name = "webViewMap";
-			this.webViewMap.Size = new System.Drawing.Size(364, 371);
+			this.webViewMap.Size = new System.Drawing.Size(440, 371);
 			this.webViewMap.TabIndex = 19;
 			this.webViewMap.ZoomFactor = 1D;
 			// 
@@ -270,25 +249,58 @@
 			this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(342, 464);
+			this.btnSave.Location = new System.Drawing.Point(341, 466);
 			this.btnSave.Margin = new System.Windows.Forms.Padding(2);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Size = new System.Drawing.Size(114, 34);
 			this.btnSave.TabIndex = 20;
 			this.btnSave.Text = "Save";
 			this.btnSave.UseVisualStyleBackColor = false;
-			this.btnSave.Click += new System.EventHandler(this.button5_Click_1);
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
-			// picBxInfo
+			// picBxPerson
 			// 
-			this.picBxInfo.Image = global::PhotoGallery_Desktop.Properties.Resources.info;
-			this.picBxInfo.Location = new System.Drawing.Point(754, 8);
-			this.picBxInfo.Margin = new System.Windows.Forms.Padding(2);
-			this.picBxInfo.Name = "picBxInfo";
-			this.picBxInfo.Size = new System.Drawing.Size(35, 35);
-			this.picBxInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.picBxInfo.TabIndex = 2;
-			this.picBxInfo.TabStop = false;
+			this.picBxPerson.Location = new System.Drawing.Point(30, 85);
+			this.picBxPerson.Name = "picBxPerson";
+			this.picBxPerson.Size = new System.Drawing.Size(65, 65);
+			this.picBxPerson.TabIndex = 3;
+			this.picBxPerson.TabStop = false;
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Image = global::PhotoGallery_Desktop.Properties.Resources.person;
+			this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label1.Location = new System.Drawing.Point(27, 55);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(85, 24);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Person";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Image = global::PhotoGallery_Desktop.Properties.Resources.date;
+			this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label6.Location = new System.Drawing.Point(27, 399);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(127, 24);
+			this.label6.TabIndex = 21;
+			this.label6.Text = "Capture Date";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// label3
+			// 
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
+			this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label3.Location = new System.Drawing.Point(487, 55);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(148, 32);
+			this.label3.TabIndex = 22;
+			this.label3.Text = "Select Location";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// EditImageMetadata
 			// 
@@ -296,12 +308,12 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(800, 508);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.webViewMap);
 			this.Controls.Add(this.lblLocationName);
-			this.Controls.Add(this.label3);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.label5);
 			this.Controls.Add(this.dtPickerCaptureDate);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.dtPickerEventDate);
@@ -316,14 +328,13 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "EditImageMetadata";
 			this.Text = "EditImageMetadata";
-			((System.ComponentModel.ISupportInitialize)(this.picBxPerson)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.webViewMap)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.picBxInfo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.picBxPerson)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -343,15 +354,15 @@
 		private System.Windows.Forms.ComboBox comBxEvent;
 		private System.Windows.Forms.DateTimePicker dtPickerEventDate;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.DateTimePicker dtPickerCaptureDate;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label lblHeaderName;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label lblLocationName;
 		private Microsoft.Web.WebView2.WinForms.WebView2 webViewMap;
 		private System.Windows.Forms.Button btnSave;
-		private System.Windows.Forms.PictureBox picBxInfo;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label3;
 	}
 }

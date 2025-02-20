@@ -128,7 +128,12 @@
   <ItemGroup>
     <Content Include="images\girl_kid.jpg" />
     <None Include="images\vectors\button.png" />
+    <None Include="images\vectors\date.png" />
+    <None Include="images\vectors\event.png" />
     <Content Include="images\vectors\info.png" />
+    <None Include="images\vectors\location.png" />
+    <None Include="images\vectors\person.png" />
+    <None Include="images\vectors\search.png" />
     <Content Include="images\vectors\tick.png" />
   </ItemGroup>
   <ItemGroup />

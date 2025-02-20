@@ -32,7 +32,10 @@ namespace PhotoGallery_Desktop
 			EditPersonMetadata editPersonMetadata = new EditPersonMetadata(people);
 			editPersonMetadata.ShowDialog();
 		}
+		private void btnSave_Click(object sender, EventArgs e)
+		{
 
+		}
 		private async void InitializeWebView()
 		{
 			await webViewMap.EnsureCoreWebView2Async(null);
@@ -55,7 +58,7 @@ namespace PhotoGallery_Desktop
             <script src='https://unpkg.com/leaflet/dist/leaflet.js'></script>
             <script>
                 window.onload = function() {
-                    var map = L.map('map').setView([37.7749, -122.4194], 8);
+                    var map = L.map('map').setView([30.865104, 430.180664], 5);
                     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         attribution: '© OpenStreetMap contributors'
                     }).addTo(map);
@@ -87,11 +90,6 @@ namespace PhotoGallery_Desktop
 		{
 			string latLon = e.WebMessageAsJson.Trim('"');
 			lblLocationName.Text = "Selected Coordinates: " + latLon;
-		}
-
-		private void button5_Click_1(object sender, EventArgs e)
-		{
-
 		}
 	}
 
