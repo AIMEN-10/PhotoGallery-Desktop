@@ -29,41 +29,41 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtName = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.rdBtnMale = new System.Windows.Forms.RadioButton();
 			this.rdBtnFemale = new System.Windows.Forms.RadioButton();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+			this.comBxEvent = new System.Windows.Forms.ComboBox();
+			this.dtPicker = new System.Windows.Forms.DateTimePicker();
 			this.label4 = new System.Windows.Forms.Label();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label6 = new System.Windows.Forms.Label();
+			this.picBxInfo = new System.Windows.Forms.PictureBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.lblLocationName = new System.Windows.Forms.Label();
 			this.webViewMap = new Microsoft.Web.WebView2.WinForms.WebView2();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.btnAdd = new System.Windows.Forms.Button();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.flowPanel = new System.Windows.Forms.FlowLayoutPanel();
+			this.btnAddDate = new System.Windows.Forms.Button();
+			this.btnSearch = new System.Windows.Forms.Button();
+			this.btnAddName = new System.Windows.Forms.Button();
+			this.flowPanelName = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowPanelDate = new System.Windows.Forms.FlowLayoutPanel();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picBxInfo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.webViewMap)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// txtName
 			// 
-			this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-			this.textBox1.Location = new System.Drawing.Point(42, 112);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(161, 20);
-			this.textBox1.TabIndex = 0;
+			this.txtName.BackColor = System.Drawing.SystemColors.Window;
+			this.txtName.Location = new System.Drawing.Point(42, 112);
+			this.txtName.Name = "txtName";
+			this.txtName.Size = new System.Drawing.Size(161, 20);
+			this.txtName.TabIndex = 0;
 			// 
 			// label1
 			// 
@@ -122,24 +122,24 @@
 			this.rdBtnFemale.Text = "Female";
 			this.rdBtnFemale.UseVisualStyleBackColor = true;
 			// 
-			// comboBox1
+			// comBxEvent
 			// 
-			this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.comboBox1.ForeColor = System.Drawing.Color.Teal;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(42, 296);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(161, 21);
-			this.comboBox1.TabIndex = 9;
+			this.comBxEvent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.comBxEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.comBxEvent.ForeColor = System.Drawing.Color.Teal;
+			this.comBxEvent.FormattingEnabled = true;
+			this.comBxEvent.Location = new System.Drawing.Point(42, 296);
+			this.comBxEvent.Name = "comBxEvent";
+			this.comBxEvent.Size = new System.Drawing.Size(161, 21);
+			this.comBxEvent.TabIndex = 9;
 			// 
-			// dateTimePicker1
+			// dtPicker
 			// 
-			this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.dateTimePicker1.Location = new System.Drawing.Point(42, 356);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-			this.dateTimePicker1.TabIndex = 10;
+			this.dtPicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+			this.dtPicker.Location = new System.Drawing.Point(42, 356);
+			this.dtPicker.Name = "dtPicker";
+			this.dtPicker.Size = new System.Drawing.Size(200, 20);
+			this.dtPicker.TabIndex = 10;
 			// 
 			// label4
 			// 
@@ -159,7 +159,7 @@
 			// 
 			this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
 			this.panel1.Controls.Add(this.label6);
-			this.panel1.Controls.Add(this.pictureBox2);
+			this.panel1.Controls.Add(this.picBxInfo);
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
@@ -177,6 +177,17 @@
 			this.label6.Size = new System.Drawing.Size(89, 29);
 			this.label6.TabIndex = 1;
 			this.label6.Text = "Search";
+			// 
+			// picBxInfo
+			// 
+			this.picBxInfo.Image = global::PhotoGallery_Desktop.Properties.Resources.info;
+			this.picBxInfo.Location = new System.Drawing.Point(744, 7);
+			this.picBxInfo.Margin = new System.Windows.Forms.Padding(2);
+			this.picBxInfo.Name = "picBxInfo";
+			this.picBxInfo.Size = new System.Drawing.Size(35, 35);
+			this.picBxInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.picBxInfo.TabIndex = 0;
+			this.picBxInfo.TabStop = false;
 			// 
 			// label3
 			// 
@@ -209,75 +220,63 @@
 			this.webViewMap.TabIndex = 19;
 			this.webViewMap.ZoomFactor = 1D;
 			// 
-			// button3
+			// btnAddDate
 			// 
-			this.button3.BackColor = System.Drawing.Color.White;
-			this.button3.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.tick;
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Location = new System.Drawing.Point(248, 354);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(22, 22);
-			this.button3.TabIndex = 20;
-			this.button3.UseVisualStyleBackColor = false;
+			this.btnAddDate.BackColor = System.Drawing.Color.White;
+			this.btnAddDate.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.tick;
+			this.btnAddDate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnAddDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddDate.ForeColor = System.Drawing.Color.White;
+			this.btnAddDate.Location = new System.Drawing.Point(248, 354);
+			this.btnAddDate.Name = "btnAddDate";
+			this.btnAddDate.Size = new System.Drawing.Size(22, 22);
+			this.btnAddDate.TabIndex = 20;
+			this.btnAddDate.UseVisualStyleBackColor = false;
 			// 
-			// button5
+			// btnSearch
 			// 
-			this.button5.BackColor = System.Drawing.Color.White;
-			this.button5.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.button;
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button5.Location = new System.Drawing.Point(334, 463);
-			this.button5.Margin = new System.Windows.Forms.Padding(2);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(114, 34);
-			this.button5.TabIndex = 15;
-			this.button5.Text = "Search";
-			this.button5.UseVisualStyleBackColor = false;
-			this.button5.Click += new System.EventHandler(this.button5_Click);
+			this.btnSearch.BackColor = System.Drawing.Color.White;
+			this.btnSearch.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.button;
+			this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnSearch.Location = new System.Drawing.Point(334, 465);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(114, 34);
+			this.btnSearch.TabIndex = 15;
+			this.btnSearch.Text = "Search";
+			this.btnSearch.UseVisualStyleBackColor = false;
 			// 
-			// pictureBox2
+			// btnAddName
 			// 
-			this.pictureBox2.Image = global::PhotoGallery_Desktop.Properties.Resources.info;
-			this.pictureBox2.Location = new System.Drawing.Point(744, 7);
-			this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 0;
-			this.pictureBox2.TabStop = false;
+			this.btnAddName.BackColor = System.Drawing.Color.White;
+			this.btnAddName.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.tick;
+			this.btnAddName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btnAddName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddName.ForeColor = System.Drawing.Color.White;
+			this.btnAddName.Location = new System.Drawing.Point(209, 110);
+			this.btnAddName.Name = "btnAddName";
+			this.btnAddName.Size = new System.Drawing.Size(22, 22);
+			this.btnAddName.TabIndex = 6;
+			this.btnAddName.UseVisualStyleBackColor = false;
+			this.btnAddName.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// btnAdd
+			// flowPanelName
 			// 
-			this.btnAdd.BackColor = System.Drawing.Color.White;
-			this.btnAdd.BackgroundImage = global::PhotoGallery_Desktop.Properties.Resources.tick;
-			this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAdd.ForeColor = System.Drawing.Color.White;
-			this.btnAdd.Location = new System.Drawing.Point(209, 110);
-			this.btnAdd.Name = "btnAdd";
-			this.btnAdd.Size = new System.Drawing.Size(22, 22);
-			this.btnAdd.TabIndex = 6;
-			this.btnAdd.UseVisualStyleBackColor = false;
-			this.btnAdd.Click += new System.EventHandler(this.button1_Click);
+			this.flowPanelName.Location = new System.Drawing.Point(42, 148);
+			this.flowPanelName.Name = "flowPanelName";
+			this.flowPanelName.Size = new System.Drawing.Size(288, 32);
+			this.flowPanelName.TabIndex = 23;
 			// 
-			// panel3
+			// flowPanelDate
 			// 
-			this.panel3.Location = new System.Drawing.Point(42, 392);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(314, 28);
-			this.panel3.TabIndex = 22;
-			// 
-			// flowPanel
-			// 
-			this.flowPanel.Location = new System.Drawing.Point(42, 148);
-			this.flowPanel.Name = "flowPanel";
-			this.flowPanel.Size = new System.Drawing.Size(288, 32);
-			this.flowPanel.TabIndex = 23;
+			this.flowPanelDate.Location = new System.Drawing.Point(42, 392);
+			this.flowPanelDate.Name = "flowPanelDate";
+			this.flowPanelDate.Size = new System.Drawing.Size(288, 32);
+			this.flowPanelDate.TabIndex = 24;
 			// 
 			// SearchImage
 			// 
@@ -285,23 +284,22 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(800, 508);
-			this.Controls.Add(this.flowPanel);
-			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.button3);
+			this.Controls.Add(this.flowPanelDate);
+			this.Controls.Add(this.flowPanelName);
+			this.Controls.Add(this.btnAddDate);
 			this.Controls.Add(this.webViewMap);
 			this.Controls.Add(this.lblLocationName);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.button5);
+			this.Controls.Add(this.btnSearch);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.dateTimePicker1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.dtPicker);
+			this.Controls.Add(this.comBxEvent);
 			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.btnAdd);
+			this.Controls.Add(this.btnAddName);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Controls.Add(this.txtName);
 			this.Name = "SearchImage";
 			this.Text = "EditImageMetadata";
 			this.groupBox1.ResumeLayout(false);
@@ -309,8 +307,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.picBxInfo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.webViewMap)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -318,26 +316,26 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtName;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.RadioButton rdBtnMale;
 		private System.Windows.Forms.RadioButton rdBtnFemale;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
+		private System.Windows.Forms.ComboBox comBxEvent;
+		private System.Windows.Forms.DateTimePicker dtPicker;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.PictureBox picBxInfo;
+		private System.Windows.Forms.Button btnSearch;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label lblLocationName;
 		private Microsoft.Web.WebView2.WinForms.WebView2 webViewMap;
-		private System.Windows.Forms.Button btnAdd;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Panel panel3;
-		private System.Windows.Forms.FlowLayoutPanel flowPanel;
+		private System.Windows.Forms.Button btnAddName;
+		private System.Windows.Forms.Button btnAddDate;
+		private System.Windows.Forms.FlowLayoutPanel flowPanelName;
+		private System.Windows.Forms.FlowLayoutPanel flowPanelDate;
 	}
 }

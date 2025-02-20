@@ -23,11 +23,6 @@ namespace PhotoGallery_Desktop
 		{
 		}
 
-		private void button5_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private async void InitializeWebView()
 		{
 			await webViewMap.EnsureCoreWebView2Async(null);
