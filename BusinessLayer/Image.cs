@@ -17,5 +17,6 @@ namespace BusinessLayer
         public int? location_id { get; set; }
 
 
+
     }
 }
