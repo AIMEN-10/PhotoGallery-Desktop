@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer2
 {
-	internal class Api
+	public class Api
 	{
 		public static string BaseUrl = "http://127.0.0.1:5000/";
 
@@ -38,6 +38,8 @@ namespace DataAccessLayer2
 		public string GetEventPath = "";
 		public string UpdateEventPath = "";
 
-		//Sync
-	}
+		//group by date
+		public string GroupByDate = $"{Api.BaseUrl}group_by_date";
+        //Sync
+    }
 }
